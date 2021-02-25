@@ -6,5 +6,12 @@
 
     <br><br>
 
+    <h2> list of cars </h2>
+    <div *ngFor = "let car of carsData">
+        
+            {{car.make}} - {{car.model}}
+       <br>
+    </div>
+
     <button class="btn btn-primary" (click)="goHome()">Home</button>
 </div>

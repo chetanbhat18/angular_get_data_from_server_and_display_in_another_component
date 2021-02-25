@@ -1,0 +1,30 @@
+[
+    {
+  "make": "Hyundai",
+  "model": "i40",
+  "year":1992,
+  "mileage": 5604,
+  "fuel_type":"Diesel",
+  "county":"Dublin"},
+  {
+  "make": "Audi",
+  "model": "A3",
+  "year":2004,
+  "mileage": 6451,
+  "fuel_type":"Petrol",
+  "county":"Cork"},
+  {
+    "make": "Audi",
+    "model": "A6",
+    "year":1992,
+    "mileage": 5604,
+    "fuel_type":"Diesel",
+    "county":"Dublin"},
+    {
+      "make": "Audi",
+      "model": "A6",
+      "year":2018,
+      "mileage": 5604,
+      "fuel_type":"Diesel",
+      "county":"Dublin"}
+  ]

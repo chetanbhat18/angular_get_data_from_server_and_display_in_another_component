@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router"
+import { OneService } from 'src/app/services/one.service';
 
 @Component({
   selector: 'app-two',
@@ -8,9 +9,12 @@ import {Router} from "@angular/router"
 })
 export class TwoComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private oneservice : OneService) { }
+
+  public carsData = []; 
 
   ngOnInit(): void {
+    this.carsData = this.oneservice.getMessageToTwo();
   }
 
   goHome(){

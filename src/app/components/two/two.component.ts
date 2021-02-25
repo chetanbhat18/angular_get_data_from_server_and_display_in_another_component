@@ -14,7 +14,7 @@ export class TwoComponent implements OnInit {
   public carsData = []; 
 
   ngOnInit(): void {
-    this.carsData = this.oneservice.getMessageToTwo();
+    this.oneservice.getData().subscribe((data)=> this.carsData=data);
   }
 
   goHome(){

@@ -9,14 +9,17 @@ import { Cars } from './oneData';
 })
 export class OneService {
 
-  private _url:string = "/assets/data/data.json";
+  //private _url:string = "/assets/data/data.json";
+  //private _url:string = "http://localhost/angularApi/test.php/";
+
+  private _url:string = "http://localhost/angularApi/1.py/";
 
   constructor( private http : HttpClient ) { 
     
   }
 
-  getData():Observable<Cars[]>{
-    return this.http.get<Cars[]>(this._url)
+  getData(){
+    return this.http.get<any>(this._url)
   }
 
 
